@@ -1,0 +1,42 @@
+<snippet>
+    <content><![CDATA[package Test::Class::${1:ClassName};
+
+use strict;
+use warnings;
+use base qw(Test::Class);
+use Test::More;
+
+#run prior and once per suite
+sub startup : Test(startup) {
+    # body...
+
+    return 1;
+}
+
+#run after and once per suite
+sub shutdown : Test(shutdown) {
+    # body...
+
+    return 1;
+}
+
+#run prior and once per test method
+sub setup : Test(setup) {
+    # body...
+
+    return 1;
+}
+
+#run after and once per test method
+sub teardown : Test(teardown) {
+    # body...
+
+    return 1;
+}
+
+1;
+]]></content>
+    <tabTrigger>testclass</tabTrigger>
+    <scope>source.perl</scope>
+    <description>Test::Class</description>
+</snippet>

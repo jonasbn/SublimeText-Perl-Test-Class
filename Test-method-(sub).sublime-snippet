@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[sub ${1:testmethod_name} : Test(${2:number_of_tests}) {
+    my (\$self) = @_;
+	${3:# body...}
+
+    return ${4:return_value};
+}
+]]></content>
+    <tabTrigger>testmethod</tabTrigger>
+    <scope>source.perl</scope>
+    <description>Function</description>
+</snippet>
