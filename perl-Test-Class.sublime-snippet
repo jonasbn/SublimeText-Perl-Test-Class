@@ -8,30 +8,23 @@ use Test::More;
 
 #run prior and once per suite
 sub startup : Test(startup) {
-    # body...
 
-    return 1;
+    diag("starting up...");
 }
 
 #run after and once per suite
 sub shutdown : Test(shutdown) {
-    # body...
-
-    return 1;
+    diag("shutting down...");
 }
 
 #run prior and once per test method
 sub setup : Test(setup) {
-    # body...
-
-    return 1;
+    diag("setting up...");
 }
 
 #run after and once per test method
 sub teardown : Test(teardown) {
-    # body...
-
-    return 1;
+    diag("tearing down...");
 }
 
 1;
