@@ -1,7 +1,7 @@
 SublimeText-Perl-Test-Class
 ===========================
 
-This package provides snippets for Perl's [Test::Class](https://metacpan.org/pod/Test::Class) for [Sublime Text 2](http://www.sublimetext.com/2)
+This package provides snippets for Perl's [Test::Class](https://metacpan.org/pod/Test::Class) for [Sublime Text 2/3](http://www.sublimetext.com/)
 
 # Introduction
 
@@ -64,12 +64,47 @@ sub testmethod_name : Test(number_of_tests) {
 }
 ```
 
-This package can with luck be used with the [package](https://github.com/jonasbn/SublimeText-Perl-Test-More) for Perl's Test::More for Sublime Text 2.
+This package can with luck be used with the [package](https://github.com/jonasbn/SublimeText-Perl-Test-More) for Perl's [Test::Class](https://metacpan.org/pod/Test::Class) for Sublime Text 2/3.
 
 # Installation
 
+Several options are available for installation.
+
+## Via Sublime Package Control:
+
+- `Control`+`Shift`+`P` on Linux/Windows,
+- `Command`+`Shift`+`P` on OS X,
+- or for any OS
+  1. Select `Tools->Command Palette` from the menu
+  2. Select `Package Control: Install Package`
+  3. Select **perl-Test-Class** from the list of available packages
+
+## Git:
+
+Clone the repository in your Sublime Text Packages directory.
+
+```git clone https://github.com/jonasbn/perl-Sublime-Test-Class```
+
+The advantage of using either Package Control or git is, that the plugin will be automatically kept _up-to-date_.
+
+## From ZIP
+
+### Sublime Text 3
+
 1. [Download](https://github.com/jonasbn/SublimeText-Perl-Test-Class/archive/master.zip) the zip file
-2. Unpack it in your Sublime Text directory
+2. Unpack it in your Sublime Text directory, as per OS and Sublime Text 
+  - OS X    ~/Library/Application Support/Sublime Text 3/Packages/
+  - Linux   ~/.config/sublime-text-3/Packages/
+  - Windows %APPDATA%\Sublime Text 3\Packages\
+3. Start using it! (see section above)
+
+### Sublime Text 2
+
+1. [Download](https://github.com/jonasbn/SublimeText-Perl-Test-Class/archive/master.zip) the zip file
+2. Unpack it in your Sublime Text directory, as per OS and Sublime Text 
+  - OS X    ~/Library/Application Support/Sublime Text 2/Packages/
+  - Linux   ~/.config/sublime-text-2/Packages/
+  - Windows %APPDATA%\Sublime Text 2\Packages\
 3. Start using it! (see section above)
 
 # Issues
@@ -78,7 +113,7 @@ Please report any issues via [github](https://github.com/jonasbn/SublimeText-Per
 
 # Motivation
 
-Organizing your tests using Test::Class is really useful and since Test::Class can be used across projects/distributions this package can assist in speeding up your development. 
+Organizing your tests using Test::Class is really useful and since [Test::Class](https://metacpan.org/pod/Test::Class) can be used across projects/distributions this package can assist in speeding up your development. 
 
 # License
 
